@@ -29,13 +29,15 @@
       flex-direction: column;
       box-shadow: none;
       border-radius: 0;
+      padding-bottom: env(safe-area-inset-bottom, 20px); /* Para evitar que el teclado tape el chat */
+      box-sizing: border-box;
     }
 
     .chat-header {
       display: flex;
       align-items: center;
       padding: 10px 15px;
-      background-color: #0084ff;
+      background-color: orange;
       color: white;
     }
 
@@ -81,6 +83,8 @@
     .chat-input {
       display: flex;
       border-top: 1px solid #ccc;
+      background: white;
+      padding-bottom: 10px;
     }
 
     .chat-input input {
